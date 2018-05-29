@@ -1,0 +1,3260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MukulS blog - posts</title><link href="http://mukuls.github.io/" rel="alternate"></link><link href="http://mukuls.github.io/feeds/posts.atom.xml" rel="self"></link><id>http://mukuls.github.io/</id><updated>2018-05-29T22:07:00+02:00</updated><entry><title>First Post</title><link href="http://mukuls.github.io/first-post.html" rel="alternate"></link><published>2018-05-29T22:07:00+02:00</published><updated>2018-05-29T22:07:00+02:00</updated><author><name>Mukul Sharma</name></author><id>tag:mukuls.github.io,2018-05-29:/first-post.html</id><summary type="html">
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
+*
+* IPython notebook
+*
+*/
+/* CSS font colors for translated ANSI colors. */
+.ansibold {
+  font-weight: bold;
+}
+/* use dark versions for foreground, to improve visibility */
+.ansiblack {
+  color: black;
+}
+.ansired {
+  color: darkred;
+}
+.ansigreen {
+  color: darkgreen;
+}
+.ansiyellow {
+  color: #c4a000;
+}
+.ansiblue {
+  color: darkblue;
+}
+.ansipurple {
+  color: darkviolet;
+}
+.ansicyan {
+  color: steelblue;
+}
+.ansigray {
+  color: gray;
+}
+/* and light for background, for the same reason */
+.ansibgblack {
+  background-color: black;
+}
+.ansibgred {
+  background-color: red;
+}
+.ansibggreen {
+  background-color: green;
+}
+.ansibgyellow {
+  background-color: yellow;
+}
+.ansibgblue {
+  background-color: blue;
+}
+.ansibgpurple {
+  background-color: magenta;
+}
+.ansibgcyan {
+  background-color: cyan;
+}
+.ansibggray {
+  background-color: gray;
+}
+div.cell {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border-radius: 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  width: 100%;
+  padding: 5px;
+  /* This acts as a spacer between cells, that is outside the border */
+  margin: 0px;
+  outline: none;
+  border-left-width: 1px;
+  padding-left: 5px;
+  background: linear-gradient(to right, transparent -40px, transparent 1px, transparent 1px, transparent 100%);
+}
+div.cell.jupyter-soft-selected {
+  border-left-color: #90CAF9;
+  border-left-color: #E3F2FD;
+  border-left-width: 1px;
+  padding-left: 5px;
+  border-right-color: #E3F2FD;
+  border-right-width: 1px;
+  background: #E3F2FD;
+}
+@media print {
+  div.cell.jupyter-soft-selected {
+    border-color: transparent;
+  }
+}
+div.cell.selected {
+  border-color: #ababab;
+  border-left-width: 0px;
+  padding-left: 6px;
+  background: linear-gradient(to right, #42A5F5 -40px, #42A5F5 5px, transparent 5px, transparent 100%);
+}
+@media print {
+  div.cell.selected {
+    border-color: transparent;
+  }
+}
+div.cell.selected.jupyter-soft-selected {
+  border-left-width: 0;
+  padding-left: 6px;
+  background: linear-gradient(to right, #42A5F5 -40px, #42A5F5 7px, #E3F2FD 7px, #E3F2FD 100%);
+}
+.edit_mode div.cell.selected {
+  border-color: #66BB6A;
+  border-left-width: 0px;
+  padding-left: 6px;
+  background: linear-gradient(to right, #66BB6A -40px, #66BB6A 5px, transparent 5px, transparent 100%);
+}
+@media print {
+  .edit_mode div.cell.selected {
+    border-color: transparent;
+  }
+}
+.prompt {
+  /* This needs to be wide enough for 3 digit prompt numbers: In[100]: */
+  min-width: 14ex;
+  /* This padding is tuned to match the padding on the CodeMirror editor. */
+  padding: 0.4em;
+  margin: 0px;
+  font-family: monospace;
+  text-align: right;
+  /* This has to match that of the the CodeMirror class line-height below */
+  line-height: 1.21429em;
+  /* Don't highlight prompt number selection */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Use default cursor */
+  cursor: default;
+}
+@media (max-width: 540px) {
+  .prompt {
+    text-align: left;
+  }
+}
+div.inner_cell {
+  min-width: 0;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  /* Old browsers */
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  /* Modern browsers */
+  flex: 1;
+}
+/* input_area and input_prompt must match in top border and margin for alignment */
+div.input_area {
+  border: 1px solid #cfcfcf;
+  border-radius: 2px;
+  background: #f7f7f7;
+  line-height: 1.21429em;
+}
+/* This is needed so that empty prompt areas can collapse to zero height when there
+   is no content in the output_subarea and the prompt. The main purpose of this is
+   to make sure that empty JavaScript output_subareas have no height. */
+div.prompt:empty {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+div.unrecognized_cell {
+  padding: 5px 5px 5px 0px;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+div.unrecognized_cell .inner_cell {
+  border-radius: 2px;
+  padding: 5px;
+  font-weight: bold;
+  color: red;
+  border: 1px solid #cfcfcf;
+  background: #eaeaea;
+}
+div.unrecognized_cell .inner_cell a {
+  color: inherit;
+  text-decoration: none;
+}
+div.unrecognized_cell .inner_cell a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+@media (max-width: 540px) {
+  div.unrecognized_cell &gt; div.prompt {
+    display: none;
+  }
+}
+div.code_cell {
+  /* avoid page breaking on code cells when printing */
+}
+@media print {
+  div.code_cell {
+    page-break-inside: avoid;
+  }
+}
+/* any special styling for code cells that are currently running goes here */
+div.input {
+  page-break-inside: avoid;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+@media (max-width: 540px) {
+  div.input {
+    /* Old browsers */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: stretch;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    -moz-box-align: stretch;
+    display: box;
+    box-orient: vertical;
+    box-align: stretch;
+    /* Modern browsers */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+/* input_area and input_prompt must match in top border and margin for alignment */
+div.input_prompt {
+  color: #303F9F;
+  border-top: 1px solid transparent;
+}
+div.input_area &gt; div.highlight {
+  margin: 0.4em;
+  border: none;
+  padding: 0px;
+  background-color: transparent;
+}
+div.input_area &gt; div.highlight &gt; pre {
+  margin: 0px;
+  border: none;
+  padding: 0px;
+  background-color: transparent;
+}
+/* The following gets added to the &lt;head&gt; if it is detected that the user has a
+ * monospace font with inconsistent normal/bold/italic height.  See
+ * notebookmain.js.  Such fonts will have keywords vertically offset with
+ * respect to the rest of the text.  The user should select a better font.
+ * See: https://github.com/ipython/ipython/issues/1503
+ *
+ * .CodeMirror span {
+ *      vertical-align: bottom;
+ * }
+ */
+.CodeMirror {
+  line-height: 1.21429em;
+  /* Changed from 1em to our global default */
+  font-size: 14px;
+  height: auto;
+  /* Changed to auto to autogrow */
+  background: none;
+  /* Changed from white to allow our bg to show through */
+}
+.CodeMirror-scroll {
+  /*  The CodeMirror docs are a bit fuzzy on if overflow-y should be hidden or visible.*/
+  /*  We have found that if it is visible, vertical scrollbars appear with font size changes.*/
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.CodeMirror-lines {
+  /* In CM2, this used to be 0.4em, but in CM3 it went to 4px. We need the em value because */
+  /* we have set a different line-height and want this to scale with that. */
+  padding: 0.4em;
+}
+.CodeMirror-linenumber {
+  padding: 0 8px 0 4px;
+}
+.CodeMirror-gutters {
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+}
+.CodeMirror pre {
+  /* In CM3 this went to 4px from 0 in CM2. We need the 0 value because of how we size */
+  /* .CodeMirror-lines */
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+}
+/*
+
+Original style from softwaremaniacs.org (c) Ivan Sagalaev &lt;Maniac@SoftwareManiacs.Org&gt;
+Adapted from GitHub theme
+
+*/
+.highlight-base {
+  color: #000;
+}
+.highlight-variable {
+  color: #000;
+}
+.highlight-variable-2 {
+  color: #1a1a1a;
+}
+.highlight-variable-3 {
+  color: #333333;
+}
+.highlight-string {
+  color: #BA2121;
+}
+.highlight-comment {
+  color: #408080;
+  font-style: italic;
+}
+.highlight-number {
+  color: #080;
+}
+.highlight-atom {
+  color: #88F;
+}
+.highlight-keyword {
+  color: #008000;
+  font-weight: bold;
+}
+.highlight-builtin {
+  color: #008000;
+}
+.highlight-error {
+  color: #f00;
+}
+.highlight-operator {
+  color: #AA22FF;
+  font-weight: bold;
+}
+.highlight-meta {
+  color: #AA22FF;
+}
+/* previously not defined, copying from default codemirror */
+.highlight-def {
+  color: #00f;
+}
+.highlight-string-2 {
+  color: #f50;
+}
+.highlight-qualifier {
+  color: #555;
+}
+.highlight-bracket {
+  color: #997;
+}
+.highlight-tag {
+  color: #170;
+}
+.highlight-attribute {
+  color: #00c;
+}
+.highlight-header {
+  color: blue;
+}
+.highlight-quote {
+  color: #090;
+}
+.highlight-link {
+  color: #00c;
+}
+/* apply the same style to codemirror */
+.cm-s-ipython span.cm-keyword {
+  color: #008000;
+  font-weight: bold;
+}
+.cm-s-ipython span.cm-atom {
+  color: #88F;
+}
+.cm-s-ipython span.cm-number {
+  color: #080;
+}
+.cm-s-ipython span.cm-def {
+  color: #00f;
+}
+.cm-s-ipython span.cm-variable {
+  color: #000;
+}
+.cm-s-ipython span.cm-operator {
+  color: #AA22FF;
+  font-weight: bold;
+}
+.cm-s-ipython span.cm-variable-2 {
+  color: #1a1a1a;
+}
+.cm-s-ipython span.cm-variable-3 {
+  color: #333333;
+}
+.cm-s-ipython span.cm-comment {
+  color: #408080;
+  font-style: italic;
+}
+.cm-s-ipython span.cm-string {
+  color: #BA2121;
+}
+.cm-s-ipython span.cm-string-2 {
+  color: #f50;
+}
+.cm-s-ipython span.cm-meta {
+  color: #AA22FF;
+}
+.cm-s-ipython span.cm-qualifier {
+  color: #555;
+}
+.cm-s-ipython span.cm-builtin {
+  color: #008000;
+}
+.cm-s-ipython span.cm-bracket {
+  color: #997;
+}
+.cm-s-ipython span.cm-tag {
+  color: #170;
+}
+.cm-s-ipython span.cm-attribute {
+  color: #00c;
+}
+.cm-s-ipython span.cm-header {
+  color: blue;
+}
+.cm-s-ipython span.cm-quote {
+  color: #090;
+}
+.cm-s-ipython span.cm-link {
+  color: #00c;
+}
+.cm-s-ipython span.cm-error {
+  color: #f00;
+}
+.cm-s-ipython span.cm-tab {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAMCAYAAAAkuj5RAAAAAXNSR0IArs4c6QAAAGFJREFUSMft1LsRQFAQheHPowAKoACx3IgEKtaEHujDjORSgWTH/ZOdnZOcM/sgk/kFFWY0qV8foQwS4MKBCS3qR6ixBJvElOobYAtivseIE120FaowJPN75GMu8j/LfMwNjh4HUpwg4LUAAAAASUVORK5CYII=);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+div.output_wrapper {
+  /* this position must be relative to enable descendents to be absolute within it */
+  position: relative;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  z-index: 1;
+}
+/* class for the output area when it should be height-limited */
+div.output_scroll {
+  /* ideally, this would be max-height, but FF barfs all over that */
+  height: 24em;
+  /* FF needs this *and the wrapper* to specify full width, or it will shrinkwrap */
+  width: 100%;
+  overflow: auto;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.8);
+  display: block;
+}
+/* output div while it is collapsed */
+div.output_collapsed {
+  margin: 0px;
+  padding: 0px;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+div.out_prompt_overlay {
+  height: 100%;
+  padding: 0px 0.4em;
+  position: absolute;
+  border-radius: 2px;
+}
+div.out_prompt_overlay:hover {
+  /* use inner shadow to get border that is computed the same on WebKit/FF */
+  -webkit-box-shadow: inset 0 0 1px #000;
+  box-shadow: inset 0 0 1px #000;
+  background: rgba(240, 240, 240, 0.5);
+}
+div.output_prompt {
+  color: #D84315;
+}
+/* This class is the outer container of all output sections. */
+div.output_area {
+  padding: 0px;
+  page-break-inside: avoid;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+div.output_area .MathJax_Display {
+  text-align: left !important;
+}
+div.output_area 
+div.output_area 
+div.output_area img,
+div.output_area svg {
+  max-width: 100%;
+  height: auto;
+}
+div.output_area img.unconfined,
+div.output_area svg.unconfined {
+  max-width: none;
+}
+/* This is needed to protect the pre formating from global settings such
+   as that of bootstrap */
+.output {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+@media (max-width: 540px) {
+  div.output_area {
+    /* Old browsers */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: stretch;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    -moz-box-align: stretch;
+    display: box;
+    box-orient: vertical;
+    box-align: stretch;
+    /* Modern browsers */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+div.output_area pre {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  color: black;
+  background-color: transparent;
+  border-radius: 0;
+}
+/* This class is for the output subarea inside the output_area and after
+   the prompt div. */
+div.output_subarea {
+  overflow-x: auto;
+  padding: 0.4em;
+  /* Old browsers */
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  /* Modern browsers */
+  flex: 1;
+  max-width: calc(100% - 14ex);
+}
+div.output_scroll div.output_subarea {
+  overflow-x: visible;
+}
+/* The rest of the output_* classes are for special styling of the different
+   output types */
+/* all text output has this class: */
+div.output_text {
+  text-align: left;
+  color: #000;
+  /* This has to match that of the the CodeMirror class line-height below */
+  line-height: 1.21429em;
+}
+/* stdout/stderr are 'text' as well as 'stream', but execute_result/error are *not* streams */
+div.output_stderr {
+  background: #fdd;
+  /* very light red background for stderr */
+}
+div.output_latex {
+  text-align: left;
+}
+/* Empty output_javascript divs should have no height */
+div.output_javascript:empty {
+  padding: 0;
+}
+.js-error {
+  color: darkred;
+}
+/* raw_input styles */
+div.raw_input_container {
+  line-height: 1.21429em;
+  padding-top: 5px;
+}
+pre.raw_input_prompt {
+  /* nothing needed here. */
+}
+input.raw_input {
+  font-family: monospace;
+  font-size: inherit;
+  color: inherit;
+  width: auto;
+  /* make sure input baseline aligns with prompt */
+  vertical-align: baseline;
+  /* padding + margin = 0.5em between prompt and cursor */
+  padding: 0em 0.25em;
+  margin: 0em 0.25em;
+}
+input.raw_input:focus {
+  box-shadow: none;
+}
+p.p-space {
+  margin-bottom: 10px;
+}
+div.output_unrecognized {
+  padding: 5px;
+  font-weight: bold;
+  color: red;
+}
+div.output_unrecognized a {
+  color: inherit;
+  text-decoration: none;
+}
+div.output_unrecognized a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+.rendered_html {
+  color: #000;
+  /* any extras will just be numbers: */
+}
+
+
+
+.rendered_html :link {
+  text-decoration: underline;
+}
+.rendered_html :visited {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+.rendered_html h1:first-child {
+  margin-top: 0.538em;
+}
+.rendered_html h2:first-child {
+  margin-top: 0.636em;
+}
+.rendered_html h3:first-child {
+  margin-top: 0.777em;
+}
+.rendered_html h4:first-child {
+  margin-top: 1em;
+}
+.rendered_html h5:first-child {
+  margin-top: 1em;
+}
+.rendered_html h6:first-child {
+  margin-top: 1em;
+}
+
+
+
+
+
+
+
+
+.rendered_html * + ul {
+  margin-top: 1em;
+}
+.rendered_html * + ol {
+  margin-top: 1em;
+}
+
+
+.rendered_html pre,
+
+
+
+.rendered_html tr,
+.rendered_html th,
+
+.rendered_html td,
+
+
+.rendered_html * + table {
+  margin-top: 1em;
+}
+
+.rendered_html * + p {
+  margin-top: 1em;
+}
+
+.rendered_html * + img {
+  margin-top: 1em;
+}
+.rendered_html img,
+
+.rendered_html img.unconfined,
+
+div.text_cell {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+@media (max-width: 540px) {
+  div.text_cell &gt; div.prompt {
+    display: none;
+  }
+}
+div.text_cell_render {
+  /*font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;*/
+  outline: none;
+  resize: none;
+  width: inherit;
+  border-style: none;
+  padding: 0.5em 0.5em 0.5em 0.4em;
+  color: #000;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+a.anchor-link:link {
+  text-decoration: none;
+  padding: 0px 20px;
+  visibility: hidden;
+}
+h1:hover .anchor-link,
+h2:hover .anchor-link,
+h3:hover .anchor-link,
+h4:hover .anchor-link,
+h5:hover .anchor-link,
+h6:hover .anchor-link {
+  visibility: visible;
+}
+.text_cell.rendered .input_area {
+  display: none;
+}
+.text_cell.rendered 
+.text_cell.unrendered .text_cell_render {
+  display: none;
+}
+.cm-header-1,
+.cm-header-2,
+.cm-header-3,
+.cm-header-4,
+.cm-header-5,
+.cm-header-6 {
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.cm-header-1 {
+  font-size: 185.7%;
+}
+.cm-header-2 {
+  font-size: 157.1%;
+}
+.cm-header-3 {
+  font-size: 128.6%;
+}
+.cm-header-4 {
+  font-size: 110%;
+}
+.cm-header-5 {
+  font-size: 100%;
+  font-style: italic;
+}
+.cm-header-6 {
+  font-size: 100%;
+  font-style: italic;
+}
+&lt;/style&gt;
+&lt;style type="text/css"&gt;.highlight .hll { background-color: #ffffcc }
+.highlight  { background: #f8f8f8; }
+.highlight .c { color: #408080; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #008000; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
+.highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
+.highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #008000 } /* Keyword.Pseudo */
+.highlight .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #B00040 } /* Keyword.Type */
+.highlight .m { color: #666666 } /* Literal.Number */
+.highlight .s { color: #BA2121 } /* Literal.String */
+.highlight .na { color: #7D9029 } /* Name.Attribute */
+.highlight .nb { color: #008000 } /* Name.Builtin */
+.highlight .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight .no { color: #880000 } /* Name.Constant */
+.highlight .nd { color: #AA22FF } /* Name.Decorator */
+.highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #0000FF } /* Name.Function */
+.highlight .nl { color: #A0A000 } /* Name.Label */
+.highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #19177C } /* Name.Variable */
+.highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #666666 } /* Literal.Number.Bin */
+.highlight .mf { color: #666666 } /* Literal.Number.Float */
+.highlight .mh { color: #666666 } /* Literal.Number.Hex */
+.highlight .mi { color: #666666 } /* Literal.Number.Integer */
+.highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
+.highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
+.highlight .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #BA2121 } /* Literal.String.Double */
+.highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight .sx { color: #008000 } /* Literal.String.Other */
+.highlight .sr { color: #BB6688 } /* Literal.String.Regex */
+.highlight .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight .ss { color: #19177C } /* Literal.String.Symbol */
+.highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #0000FF } /* Name.Function.Magic */
+.highlight .vc { color: #19177C } /* Name.Variable.Class */
+.highlight .vg { color: #19177C } /* Name.Variable.Global */
+.highlight .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight .vm { color: #19177C } /* Name.Variable.Magic */
+.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */&lt;/style&gt;
+&lt;style type="text/css"&gt;
+/* Temporary definitions which will become obsolete with Notebook release 5.0 */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-bold { font-weight: bold; }
+&lt;/style&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [1]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# importing all the necessary libraries&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;pd&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;re&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [2]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# setting working directory&lt;/span&gt;
+&lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;chdir&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"D:/MOOC/edwisor/assignment"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="1.-Load-CSV-by-skipping-second-row."&gt;1. Load CSV by skipping second row.&lt;a class="anchor-link" href="#1.-Load-CSV-by-skipping-second-row."&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [3]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Loading data from csv while skipping the second row&lt;/span&gt;
+&lt;span class="n"&gt;imdb&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_csv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'IMDB_data.csv'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;skiprows&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;header&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;encoding&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'latin1'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;describe&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+&lt;div class="output_area"&gt;
+&lt;div class="prompt output_prompt"&gt;Out[3]:&lt;/div&gt;
+&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
+&lt;div&gt;
+&lt;style&gt;
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+&lt;/style&gt;
+&lt;table border="1" class="dataframe"&gt;
+&lt;thead&gt;
+&lt;tr style="text-align: right;"&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Plot&lt;/th&gt;
+&lt;th&gt;Title&lt;/th&gt;
+&lt;th&gt;imdbVotes&lt;/th&gt;
+&lt;th&gt;Poster&lt;/th&gt;
+&lt;th&gt;imdbRating&lt;/th&gt;
+&lt;th&gt;Genre&lt;/th&gt;
+&lt;th&gt;imdbID&lt;/th&gt;
+&lt;th&gt;Year&lt;/th&gt;
+&lt;th&gt;Language&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;th&gt;count&lt;/th&gt;
+&lt;td&gt;3389&lt;/td&gt;
+&lt;td&gt;3389&lt;/td&gt;
+&lt;td&gt;3334&lt;/td&gt;
+&lt;td&gt;1836&lt;/td&gt;
+&lt;td&gt;3388&lt;/td&gt;
+&lt;td&gt;3389&lt;/td&gt;
+&lt;td&gt;3389&lt;/td&gt;
+&lt;td&gt;3389&lt;/td&gt;
+&lt;td&gt;3389&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;unique&lt;/th&gt;
+&lt;td&gt;3382&lt;/td&gt;
+&lt;td&gt;3383&lt;/td&gt;
+&lt;td&gt;904&lt;/td&gt;
+&lt;td&gt;1782&lt;/td&gt;
+&lt;td&gt;87&lt;/td&gt;
+&lt;td&gt;249&lt;/td&gt;
+&lt;td&gt;3383&lt;/td&gt;
+&lt;td&gt;89&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;top&lt;/th&gt;
+&lt;td&gt;A tormented young woman teams up with an eccen...&lt;/td&gt;
+&lt;td&gt;Kick&lt;/td&gt;
+&lt;td&gt;2718&lt;/td&gt;
+&lt;td&gt;http://i.media-imdb.com/images/SF1f0a42ee1aa08...&lt;/td&gt;
+&lt;td&gt;87&lt;/td&gt;
+&lt;td&gt;Drama&lt;/td&gt;
+&lt;td&gt;tt0461936&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;freq&lt;/th&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1702&lt;/td&gt;
+&lt;td&gt;52&lt;/td&gt;
+&lt;td&gt;1702&lt;/td&gt;
+&lt;td&gt;689&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1031&lt;/td&gt;
+&lt;td&gt;2932&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="Preparing-data"&gt;Preparing data&lt;a class="anchor-link" href="#Preparing-data"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [4]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Removing trailing whitespace&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;astype&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;map&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;strip&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+    &lt;span class="k"&gt;except&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;type&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]))&lt;/span&gt;
+        
+&lt;span class="c1"&gt;# converting all the nan's to to empty string (string 'nan' and np.nan both)&lt;/span&gt;
+&lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;fillna&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;''&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;inplace&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;replace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;to_replace&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'nan'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;''&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;inplace&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    
+&lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;describe&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+&lt;div class="output_area"&gt;
+&lt;div class="prompt output_prompt"&gt;Out[4]:&lt;/div&gt;
+&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
+&lt;div&gt;
+&lt;style&gt;
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+&lt;/style&gt;
+&lt;table border="1" class="dataframe"&gt;
+&lt;thead&gt;
+&lt;tr style="text-align: right;"&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Plot&lt;/th&gt;
+&lt;th&gt;Title&lt;/th&gt;
+&lt;th&gt;imdbVotes&lt;/th&gt;
+&lt;th&gt;Poster&lt;/th&gt;
+&lt;th&gt;imdbRating&lt;/th&gt;
+&lt;th&gt;Genre&lt;/th&gt;
+&lt;th&gt;imdbID&lt;/th&gt;
+&lt;th&gt;Year&lt;/th&gt;
+&lt;th&gt;Language&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;th&gt;count&lt;/th&gt;
+&lt;td&gt;3389&lt;/td&gt;
+&lt;td&gt;3389&lt;/td&gt;
+&lt;td&gt;3389&lt;/td&gt;
+&lt;td&gt;3389&lt;/td&gt;
+&lt;td&gt;3389&lt;/td&gt;
+&lt;td&gt;3389&lt;/td&gt;
+&lt;td&gt;3389&lt;/td&gt;
+&lt;td&gt;3389&lt;/td&gt;
+&lt;td&gt;3389&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;unique&lt;/th&gt;
+&lt;td&gt;3382&lt;/td&gt;
+&lt;td&gt;3383&lt;/td&gt;
+&lt;td&gt;905&lt;/td&gt;
+&lt;td&gt;1783&lt;/td&gt;
+&lt;td&gt;88&lt;/td&gt;
+&lt;td&gt;249&lt;/td&gt;
+&lt;td&gt;3383&lt;/td&gt;
+&lt;td&gt;89&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;top&lt;/th&gt;
+&lt;td&gt;A tormented young woman teams up with an eccen...&lt;/td&gt;
+&lt;td&gt;Kick&lt;/td&gt;
+&lt;td&gt;2718&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;87&lt;/td&gt;
+&lt;td&gt;Drama&lt;/td&gt;
+&lt;td&gt;tt0461936&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;freq&lt;/th&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1702&lt;/td&gt;
+&lt;td&gt;1553&lt;/td&gt;
+&lt;td&gt;1702&lt;/td&gt;
+&lt;td&gt;689&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1031&lt;/td&gt;
+&lt;td&gt;2933&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [5]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;## removing junk characters(everything excepts digits) from variable&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'imdbVotes'&lt;/span&gt;&lt;span class="p"&gt;])):&lt;/span&gt;
+    &lt;span class="n"&gt;l&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;re&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;findall&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="se"&gt;\\&lt;/span&gt;&lt;span class="s1"&gt;d+'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'imdbVotes'&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+    &lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'imdbVotes'&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;''&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'imdbRating'&lt;/span&gt;&lt;span class="p"&gt;])):&lt;/span&gt;
+    &lt;span class="n"&gt;l&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;re&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;findall&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="se"&gt;\\&lt;/span&gt;&lt;span class="s1"&gt;d+'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'imdbRating'&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+    &lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'imdbRating'&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;''&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;describe&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+&lt;div class="output_area"&gt;
+&lt;div class="prompt output_prompt"&gt;Out[5]:&lt;/div&gt;
+&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
+&lt;div&gt;
+&lt;style&gt;
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+&lt;/style&gt;
+&lt;table border="1" class="dataframe"&gt;
+&lt;thead&gt;
+&lt;tr style="text-align: right;"&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Plot&lt;/th&gt;
+&lt;th&gt;Title&lt;/th&gt;
+&lt;th&gt;imdbVotes&lt;/th&gt;
+&lt;th&gt;Poster&lt;/th&gt;
+&lt;th&gt;imdbRating&lt;/th&gt;
+&lt;th&gt;Genre&lt;/th&gt;
+&lt;th&gt;imdbID&lt;/th&gt;
+&lt;th&gt;Year&lt;/th&gt;
+&lt;th&gt;Language&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;th&gt;count&lt;/th&gt;
+&lt;td&gt;3389&lt;/td&gt;
+&lt;td&gt;3389&lt;/td&gt;
+&lt;td&gt;3389&lt;/td&gt;
+&lt;td&gt;3389&lt;/td&gt;
+&lt;td&gt;3389&lt;/td&gt;
+&lt;td&gt;3389&lt;/td&gt;
+&lt;td&gt;3389&lt;/td&gt;
+&lt;td&gt;3389&lt;/td&gt;
+&lt;td&gt;3389&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;unique&lt;/th&gt;
+&lt;td&gt;3382&lt;/td&gt;
+&lt;td&gt;3383&lt;/td&gt;
+&lt;td&gt;895&lt;/td&gt;
+&lt;td&gt;1783&lt;/td&gt;
+&lt;td&gt;57&lt;/td&gt;
+&lt;td&gt;249&lt;/td&gt;
+&lt;td&gt;3383&lt;/td&gt;
+&lt;td&gt;89&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;top&lt;/th&gt;
+&lt;td&gt;A tormented young woman teams up with an eccen...&lt;/td&gt;
+&lt;td&gt;Kick&lt;/td&gt;
+&lt;td&gt;2718&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;87&lt;/td&gt;
+&lt;td&gt;Drama&lt;/td&gt;
+&lt;td&gt;tt0461936&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;freq&lt;/th&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1702&lt;/td&gt;
+&lt;td&gt;1553&lt;/td&gt;
+&lt;td&gt;1703&lt;/td&gt;
+&lt;td&gt;689&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1031&lt;/td&gt;
+&lt;td&gt;2933&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [6]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;## Replacing empty values with '0's&lt;/span&gt;
+&lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'imdbVotes'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'imdbVotes'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;replace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;''&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;'0'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'imdbRating'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'imdbRating'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;replace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;''&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;'0'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;## dropping na's from data frame&lt;/span&gt;
+&lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dropna&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;axis&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;inplace&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="2.-Extract-the-unique-genres-and-its-count-and-store-in-data-frame-with-index-key."&gt;2. Extract the unique genres and its count and store in data frame with index key.&lt;a class="anchor-link" href="#2.-Extract-the-unique-genres-and-its-count-and-store-in-data-frame-with-index-key."&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [7]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# creating a new dataframe with unique Genre's and with Genre as index&lt;/span&gt;
+&lt;span class="n"&gt;uniq_genre&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;groupby&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="s1"&gt;'Genre'&lt;/span&gt;&lt;span class="p"&gt;])[&lt;/span&gt;&lt;span class="s1"&gt;'Genre'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;uniq_genre&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+&lt;div class="output_area"&gt;
+&lt;div class="prompt output_prompt"&gt;Out[7]:&lt;/div&gt;
+&lt;div class="output_text output_subarea output_execute_result"&gt;
+&lt;pre&gt;Genre
+Action                                                                  41
+Action, Adventure                                                        3
+Action, Adventure, Biography, Drama, History, Musical, Romance           1
+Action, Adventure, Comedy, Crime, Musical                                1
+Action, Adventure, Comedy, Drama                                         1
+Action, Adventure, Comedy, Drama, Fantasy, Musical, Romance, Sci-Fi      1
+Action, Adventure, Comedy, Drama, Musical, Thriller                      1
+Action, Adventure, Comedy, Horror                                        1
+Action, Adventure, Comedy, Romance, Thriller                             1
+Action, Adventure, Crime, Drama                                          1
+Action, Adventure, Crime, Drama, Family                                  1
+Action, Adventure, Crime, Drama, Thriller                                5
+Action, Adventure, Drama                                                11
+Action, Adventure, Drama, Fantasy                                        2
+Action, Adventure, Drama, Sci-Fi, Thriller                               1
+Action, Adventure, Drama, Thriller                                       1
+Action, Adventure, Fantasy, Horror, Thriller                             1
+Action, Adventure, Fantasy, Musical                                      1
+Action, Adventure, Romance, Sci-Fi                                       1
+Action, Adventure, Thriller                                              4
+Action, Adventure, Western                                               2
+Action, Biography, Crime, Drama, Thriller                                1
+Action, Biography, Crime, Sport, Thriller                                1
+Action, Biography, Drama, History                                        1
+Action, Biography, History                                               1
+Action, Comedy                                                          17
+Action, Comedy, Crime, Drama                                             1
+Action, Comedy, Crime, Drama, Musical, Romance                           1
+Action, Comedy, Crime, Drama, Thriller                                   2
+Action, Comedy, Crime, Musical, Romance                                  1
+                                                                      ... 
+Fantasy, Musical, Sci-Fi                                                 1
+Fantasy, Romance                                                         2
+History                                                                 10
+History, Musical                                                         1
+Horror                                                                 115
+Horror, Adventure                                                        1
+Horror, Mystery, Thriller                                               29
+Horror, Romance, Thriller                                                4
+Horror, Thriller                                                        68
+Music, Musical                                                           2
+Musical                                                                 21
+Musical, Comedy, Romance                                                 1
+Musical, Drama                                                           1
+Musical, Drama, Action, War                                              1
+Musical, Drama, Adventure, Comedy                                        1
+Musical, Drama, Family                                                   1
+Musical, Drama, Romance                                                  1
+Musical, Mystery, Thriller                                               1
+Musical, Romance                                                         3
+Musical, Romance, Action, Drama                                          1
+Musical, Romance, Drama                                                  1
+Musical, Romance, Drama, Family                                          1
+Mystery                                                                 21
+Mystery, Romance                                                         2
+Mystery, Thriller                                                       27
+Romance, Sci-Fi                                                          1
+Sci-Fi                                                                  31
+Sport                                                                   14
+Thriller, Mystery                                                        1
+War, Drama, Romance                                                      1
+Name: Genre, Length: 249, dtype: int64&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="3.-Converting-required-data-type"&gt;3. Converting required data type&lt;a class="anchor-link" href="#3.-Converting-required-data-type"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [8]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;## converting to appropriate data types&lt;/span&gt;
+&lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'imdbVotes'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'imdbVotes'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;astype&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;float&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'imdbRating'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'imdbRating'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;astype&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;float&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [9]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;## imdbRating should be 0 - 10.0&lt;/span&gt;
+&lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'imdbRating'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'imdbRating'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;apply&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mf"&gt;10.0&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Will come empty, since all such values has been divided by 10&lt;/span&gt;
+&lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'imdbRating'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+&lt;div class="output_area"&gt;
+&lt;div class="prompt output_prompt"&gt;Out[9]:&lt;/div&gt;
+&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
+&lt;div&gt;
+&lt;style&gt;
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+&lt;/style&gt;
+&lt;table border="1" class="dataframe"&gt;
+&lt;thead&gt;
+&lt;tr style="text-align: right;"&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Plot&lt;/th&gt;
+&lt;th&gt;Title&lt;/th&gt;
+&lt;th&gt;imdbVotes&lt;/th&gt;
+&lt;th&gt;Poster&lt;/th&gt;
+&lt;th&gt;imdbRating&lt;/th&gt;
+&lt;th&gt;Genre&lt;/th&gt;
+&lt;th&gt;imdbID&lt;/th&gt;
+&lt;th&gt;Year&lt;/th&gt;
+&lt;th&gt;Language&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [10]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;#(since we only have year, its better to take time as category rather than datetime)&lt;/span&gt;
+&lt;span class="c1"&gt;# limiting year to 4 digits&lt;/span&gt;
+&lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'Year'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'Year'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;map&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;[:&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+
+&lt;span class="c1"&gt;# changing Language,Year, Genre to categorical variable    &lt;/span&gt;
+&lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'Year'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'Year'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;astype&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'category'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'Language'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'Language'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;astype&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'category'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'Genre'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'Genre'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;astype&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'category'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;column&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'dtype = &lt;/span&gt;&lt;span class="si"&gt;{}&lt;/span&gt;&lt;span class="s1"&gt;, column =&lt;/span&gt;&lt;span class="si"&gt;{}&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;column&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dtype&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;column&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+&lt;div class="output_area"&gt;
+&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;dtype = object, column =Plot
+dtype = object, column =Title
+dtype = float64, column =imdbVotes
+dtype = object, column =Poster
+dtype = float64, column =imdbRating
+dtype = object, column =Genre
+dtype = object, column =imdbID
+dtype = category, column =Year
+dtype = category, column =Language
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="4.-Sorting-the-genre"&gt;4. Sorting the genre&lt;a class="anchor-link" href="#4.-Sorting-the-genre"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [11]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# sorting the genre&lt;/span&gt;
+&lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sort_values&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Genre'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ascending&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;inplace&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;reset_index&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;inplace&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;drop&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;imdb&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+&lt;div class="output_area"&gt;
+&lt;div class="prompt output_prompt"&gt;Out[11]:&lt;/div&gt;
+&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
+&lt;div&gt;
+&lt;style&gt;
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+&lt;/style&gt;
+&lt;table border="1" class="dataframe"&gt;
+&lt;thead&gt;
+&lt;tr style="text-align: right;"&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Plot&lt;/th&gt;
+&lt;th&gt;Title&lt;/th&gt;
+&lt;th&gt;imdbVotes&lt;/th&gt;
+&lt;th&gt;Poster&lt;/th&gt;
+&lt;th&gt;imdbRating&lt;/th&gt;
+&lt;th&gt;Genre&lt;/th&gt;
+&lt;th&gt;imdbID&lt;/th&gt;
+&lt;th&gt;Year&lt;/th&gt;
+&lt;th&gt;Language&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;th&gt;0&lt;/th&gt;
+&lt;td&gt;A secret software created by the American gove...&lt;/td&gt;
+&lt;td&gt;Lethal Commission&lt;/td&gt;
+&lt;td&gt;1084.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BODUyNDI1...&lt;/td&gt;
+&lt;td&gt;6.4&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt2319919&lt;/td&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;1&lt;/th&gt;
+&lt;td&gt;In this action flick, JUDE ST. CLERE discovers...&lt;/td&gt;
+&lt;td&gt;The Lackey&lt;/td&gt;
+&lt;td&gt;2672.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMjAwODIx...&lt;/td&gt;
+&lt;td&gt;7.1&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt2197884&lt;/td&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;2&lt;/th&gt;
+&lt;td&gt;Eddy (Jayaprakash Reddy) is a powerful mafia l...&lt;/td&gt;
+&lt;td&gt;Nijam&lt;/td&gt;
+&lt;td&gt;803.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;6.5&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt0368896&lt;/td&gt;
+&lt;td&gt;2003&lt;/td&gt;
+&lt;td&gt;Telugu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3&lt;/th&gt;
+&lt;td&gt;Co-Director Tom Logan discusses the making of ...&lt;/td&gt;
+&lt;td&gt;Feature Commentary with Director Tom Logan&lt;/td&gt;
+&lt;td&gt;1421.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTUzNDQ4...&lt;/td&gt;
+&lt;td&gt;6.8&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt3099258&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;4&lt;/th&gt;
+&lt;td&gt;In a nuclear plant disaster, five teenagers fi...&lt;/td&gt;
+&lt;td&gt;Lock Down&lt;/td&gt;
+&lt;td&gt;1887.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTgwMDg1...&lt;/td&gt;
+&lt;td&gt;5.4&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt2349962&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;5&lt;/th&gt;
+&lt;td&gt;When long time friend and informer, Louie D. G...&lt;/td&gt;
+&lt;td&gt;Bullitt and the Mystery of the Devils Root&lt;/td&gt;
+&lt;td&gt;1887.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BNzg2NzM5...&lt;/td&gt;
+&lt;td&gt;5.4&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt3020878&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;6&lt;/th&gt;
+&lt;td&gt;An astrophysicist professor - who firmly belie...&lt;/td&gt;
+&lt;td&gt;Dimension Folders&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTQ5NzA0...&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt2936218&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;7&lt;/th&gt;
+&lt;td&gt;A secret organization called "The Society" is ...&lt;/td&gt;
+&lt;td&gt;The Hunters Circle&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt2989060&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;8&lt;/th&gt;
+&lt;td&gt;An out of work good citizen and seasoned Karat...&lt;/td&gt;
+&lt;td&gt;Monrovia on Fire&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMjAxNjcz...&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt3745484&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;9&lt;/th&gt;
+&lt;td&gt;This is the Quantum Age. An age that now has f...&lt;/td&gt;
+&lt;td&gt;QUANTUM SHOCK the Movie&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt4089764&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;10&lt;/th&gt;
+&lt;td&gt;The Mad Monkey Crew 2 follows on from the even...&lt;/td&gt;
+&lt;td&gt;The Mad Monkey Crew 2&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt4320710&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;11&lt;/th&gt;
+&lt;td&gt;Tar and his Sons own a private island for thei...&lt;/td&gt;
+&lt;td&gt;2056 Escape from Zombie Island&lt;/td&gt;
+&lt;td&gt;2592.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;5.3&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt2545870&lt;/td&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;12&lt;/th&gt;
+&lt;td&gt;Steve and Virgil, a couple of straight shootin...&lt;/td&gt;
+&lt;td&gt;100 Miles from Hell&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTQ5Mjk4...&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt2955976&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;13&lt;/th&gt;
+&lt;td&gt;An outcast returns to his stomping grounds to ...&lt;/td&gt;
+&lt;td&gt;The Greed of Men&lt;/td&gt;
+&lt;td&gt;1559.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTgwNjM3...&lt;/td&gt;
+&lt;td&gt;6.3&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt2265591&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;14&lt;/th&gt;
+&lt;td&gt;The greatest thief in the world gives up his l...&lt;/td&gt;
+&lt;td&gt;Ghostman&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt3774658&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;15&lt;/th&gt;
+&lt;td&gt;An all-girl gang tangles with rival gangs and ...&lt;/td&gt;
+&lt;td&gt;Asphalt Angels&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt3149134&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;16&lt;/th&gt;
+&lt;td&gt;When a domestic terrorist group lead by Brian ...&lt;/td&gt;
+&lt;td&gt;Point of Deception&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt2022498&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;17&lt;/th&gt;
+&lt;td&gt;Arjun is a young man who will always defend hi...&lt;/td&gt;
+&lt;td&gt;Arjun&lt;/td&gt;
+&lt;td&gt;797.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;6.5&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt0907619&lt;/td&gt;
+&lt;td&gt;2004&lt;/td&gt;
+&lt;td&gt;Telugu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;18&lt;/th&gt;
+&lt;td&gt;A shadowy all-female crime organization - M.A....&lt;/td&gt;
+&lt;td&gt;MARRA&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTUwNjU4...&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt2318950&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;19&lt;/th&gt;
+&lt;td&gt;Eve's life is forever altered when her parents...&lt;/td&gt;
+&lt;td&gt;Prophecy of Eve&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMjM4MjAz...&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt3499966&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;20&lt;/th&gt;
+&lt;td&gt;One year after their father's death, two broth...&lt;/td&gt;
+&lt;td&gt;Cult of the Crystal Skull&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BNTEyNDg2...&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt3656294&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;21&lt;/th&gt;
+&lt;td&gt;Death Drive tells the story of a young man, wh...&lt;/td&gt;
+&lt;td&gt;Death Drive&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt4040672&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;22&lt;/th&gt;
+&lt;td&gt;Prohibition has been brought back into effect ...&lt;/td&gt;
+&lt;td&gt;80 Proof&lt;/td&gt;
+&lt;td&gt;2302.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMjA4MDA0...&lt;/td&gt;
+&lt;td&gt;5.6&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt2524400&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;23&lt;/th&gt;
+&lt;td&gt;A Modern day Nazi death squad embark on a cove...&lt;/td&gt;
+&lt;td&gt;Eagles Nest&lt;/td&gt;
+&lt;td&gt;2302.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;6.1&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt3961184&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;24&lt;/th&gt;
+&lt;td&gt;The Don of Dons is a forced love story with mu...&lt;/td&gt;
+&lt;td&gt;The Don of Dons&lt;/td&gt;
+&lt;td&gt;2592.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMjI0OTM4...&lt;/td&gt;
+&lt;td&gt;6.3&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt3151078&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;25&lt;/th&gt;
+&lt;td&gt;In the wake of a shocking civilian massacre in...&lt;/td&gt;
+&lt;td&gt;Turkey Shoot&lt;/td&gt;
+&lt;td&gt;1421.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTc0Nzgx...&lt;/td&gt;
+&lt;td&gt;5.0&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt3816614&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;26&lt;/th&gt;
+&lt;td&gt;A gunfighter is taken prisoner by a female wil...&lt;/td&gt;
+&lt;td&gt;Six Gun Women&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt4020052&lt;/td&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;27&lt;/th&gt;
+&lt;td&gt;Sivaji is a young kid from Sri Lanka who's fam...&lt;/td&gt;
+&lt;td&gt;Chatrapathi&lt;/td&gt;
+&lt;td&gt;1179.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;7.6&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt0843328&lt;/td&gt;
+&lt;td&gt;2005&lt;/td&gt;
+&lt;td&gt;Telugu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;28&lt;/th&gt;
+&lt;td&gt;Gem of the Rainforest is the story about the t...&lt;/td&gt;
+&lt;td&gt;Gem of the Rainforest&lt;/td&gt;
+&lt;td&gt;1887.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTAzNTA0...&lt;/td&gt;
+&lt;td&gt;5.8&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt2972032&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;29&lt;/th&gt;
+&lt;td&gt;Elizabeth Mann is a young aspiring publisher w...&lt;/td&gt;
+&lt;td&gt;The Search for Agent Z&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt2267664&lt;/td&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;...&lt;/th&gt;
+&lt;td&gt;...&lt;/td&gt;
+&lt;td&gt;...&lt;/td&gt;
+&lt;td&gt;...&lt;/td&gt;
+&lt;td&gt;...&lt;/td&gt;
+&lt;td&gt;...&lt;/td&gt;
+&lt;td&gt;...&lt;/td&gt;
+&lt;td&gt;...&lt;/td&gt;
+&lt;td&gt;...&lt;/td&gt;
+&lt;td&gt;...&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3359&lt;/th&gt;
+&lt;td&gt;A suburban cult is born... In a collage of new...&lt;/td&gt;
+&lt;td&gt;Embryonic&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt2149784&lt;/td&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3360&lt;/th&gt;
+&lt;td&gt;Renegades picks up immediately after Uprising ...&lt;/td&gt;
+&lt;td&gt;Chronicles of Humanity Regenades&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt4043138&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3361&lt;/th&gt;
+&lt;td&gt;Two outer-space aliens visit Earth with the in...&lt;/td&gt;
+&lt;td&gt;Deceit&lt;/td&gt;
+&lt;td&gt;2100.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BODEyNDE4...&lt;/td&gt;
+&lt;td&gt;6.3&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt0097176&lt;/td&gt;
+&lt;td&gt;1992&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3362&lt;/th&gt;
+&lt;td&gt;This sci-fi mockumentary follows the unusual e...&lt;/td&gt;
+&lt;td&gt;Hickory Never Bleeds&lt;/td&gt;
+&lt;td&gt;1467.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTY3NDA5...&lt;/td&gt;
+&lt;td&gt;5.9&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt2313778&lt;/td&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3363&lt;/th&gt;
+&lt;td&gt;Some time in the distant future, Earth's natur...&lt;/td&gt;
+&lt;td&gt;Era 7&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt2795556&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3364&lt;/th&gt;
+&lt;td&gt;The Krozley Team deals with past problems that...&lt;/td&gt;
+&lt;td&gt;Paranormal Chasers Ghostly Guest&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTY2MjIw...&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt4112398&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3365&lt;/th&gt;
+&lt;td&gt;An alien invasion comes to the Earth represent...&lt;/td&gt;
+&lt;td&gt;Lost in the Pinelands&lt;/td&gt;
+&lt;td&gt;1084.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BNDE1ODEz...&lt;/td&gt;
+&lt;td&gt;5.2&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt2207614&lt;/td&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3366&lt;/th&gt;
+&lt;td&gt;A young, confused Pauly, copes with stress as ...&lt;/td&gt;
+&lt;td&gt;Belgium Building&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt3994118&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3367&lt;/th&gt;
+&lt;td&gt;Two graduate students, Rose and Jacob, set out...&lt;/td&gt;
+&lt;td&gt;Pursuit the Movie&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt2255925&lt;/td&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3368&lt;/th&gt;
+&lt;td&gt;BOTANICA is a creepy futuristic black comedy t...&lt;/td&gt;
+&lt;td&gt;Botanica&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt3578376&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3369&lt;/th&gt;
+&lt;td&gt;A team of anonymous military and government se...&lt;/td&gt;
+&lt;td&gt;Project 12&lt;/td&gt;
+&lt;td&gt;2185.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMjEyNTEz...&lt;/td&gt;
+&lt;td&gt;6.1&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt1978514&lt;/td&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3370&lt;/th&gt;
+&lt;td&gt;Cybornetics propels you into a not so distant ...&lt;/td&gt;
+&lt;td&gt;Cybornetics Urban Cyborg&lt;/td&gt;
+&lt;td&gt;1252.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTkyNDIx...&lt;/td&gt;
+&lt;td&gt;5.3&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt3036250&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3371&lt;/th&gt;
+&lt;td&gt;"Mix" and his brother, a former "M.O.A. agent ...&lt;/td&gt;
+&lt;td&gt;In 24Hours&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt3552184&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3372&lt;/th&gt;
+&lt;td&gt;2035, United States of Europe. Some humans are...&lt;/td&gt;
+&lt;td&gt;Index Zero&lt;/td&gt;
+&lt;td&gt;1141.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BNzMyODYy...&lt;/td&gt;
+&lt;td&gt;5.8&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt3451968&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3373&lt;/th&gt;
+&lt;td&gt;After more than 100 years of ruthless competit...&lt;/td&gt;
+&lt;td&gt;DukeCarolina The Blue Blood Rivalry&lt;/td&gt;
+&lt;td&gt;2457.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMzQ3MTIw...&lt;/td&gt;
+&lt;td&gt;5.8&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt2780790&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3374&lt;/th&gt;
+&lt;td&gt;The Gold Rush Expedition Race is one of the fo...&lt;/td&gt;
+&lt;td&gt;2013 Gold Rush Expedition Race&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt4181324&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3375&lt;/th&gt;
+&lt;td&gt;From acclaimed directors Paul Diffley and Chri...&lt;/td&gt;
+&lt;td&gt;Wide Boyz&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt3121430&lt;/td&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3376&lt;/th&gt;
+&lt;td&gt;The best cricket players on the planet converg...&lt;/td&gt;
+&lt;td&gt;Indian Premier League&lt;/td&gt;
+&lt;td&gt;1027.0&lt;/td&gt;
+&lt;td&gt;http://i.media-imdb.com/images/SFa26455c07afc3...&lt;/td&gt;
+&lt;td&gt;8.5&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt2317751&lt;/td&gt;
+&lt;td&gt;2008&lt;/td&gt;
+&lt;td&gt;Hindi&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3377&lt;/th&gt;
+&lt;td&gt;The Nfinity Champions League is a group of 30 ...&lt;/td&gt;
+&lt;td&gt;Nfinity Champions League Cheerleading Event&lt;/td&gt;
+&lt;td&gt;1230.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTY5Nzg5...&lt;/td&gt;
+&lt;td&gt;5.1&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt3586164&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3378&lt;/th&gt;
+&lt;td&gt;"A City Divided" takes viewers through the gre...&lt;/td&gt;
+&lt;td&gt;A City Divided&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt3458290&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3379&lt;/th&gt;
+&lt;td&gt;The city of Detroit, Michigan has been known t...&lt;/td&gt;
+&lt;td&gt;Battles Bouts and Brawls The Story of Pro Wres...&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt3793322&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3380&lt;/th&gt;
+&lt;td&gt;Learn the secrets to catching trophy northern ...&lt;/td&gt;
+&lt;td&gt;Trophy Pike Tactics&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt3606510&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3381&lt;/th&gt;
+&lt;td&gt;Severe Racing is proud to present their 4th in...&lt;/td&gt;
+&lt;td&gt;Severe Offroad 4&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMjQxODc5...&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt4500344&lt;/td&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3382&lt;/th&gt;
+&lt;td&gt;Severe Racing Films offers up the best sequenc...&lt;/td&gt;
+&lt;td&gt;Best of Severe Offroad&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTUyNDUz...&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt4500728&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3383&lt;/th&gt;
+&lt;td&gt;Somewhere between fantasy and reality lies a p...&lt;/td&gt;
+&lt;td&gt;Live from the Moon&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTc3ODcx...&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt3420528&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3384&lt;/th&gt;
+&lt;td&gt;The Gold Rush Expedition Race is one of the fo...&lt;/td&gt;
+&lt;td&gt;2012 Gold Rush Expedition Race&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt4149040&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3385&lt;/th&gt;
+&lt;td&gt;17 Seconds' is a unique project that doesn't j...&lt;/td&gt;
+&lt;td&gt;17 Seconds&lt;/td&gt;
+&lt;td&gt;1421.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;5.2&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt3328724&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3386&lt;/th&gt;
+&lt;td&gt;Lone Star Holy War is a sports documentary hig...&lt;/td&gt;
+&lt;td&gt;Lone Star Holy War&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt4254746&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3387&lt;/th&gt;
+&lt;td&gt;Aks is the story of a hunter and his prey. A c...&lt;/td&gt;
+&lt;td&gt;Aks&lt;/td&gt;
+&lt;td&gt;1151.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTUxOTg1...&lt;/td&gt;
+&lt;td&gt;5.9&lt;/td&gt;
+&lt;td&gt;Thriller, Mystery&lt;/td&gt;
+&lt;td&gt;tt0289845&lt;/td&gt;
+&lt;td&gt;2001&lt;/td&gt;
+&lt;td&gt;Hindi&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3388&lt;/th&gt;
+&lt;td&gt;Karan is a lazy good-for-nothing who lives on ...&lt;/td&gt;
+&lt;td&gt;Lakshya&lt;/td&gt;
+&lt;td&gt;8556.0&lt;/td&gt;
+&lt;td&gt;http://i.media-imdb.com/images/SF1f0a42ee1aa08...&lt;/td&gt;
+&lt;td&gt;7.9&lt;/td&gt;
+&lt;td&gt;War, Drama, Romance&lt;/td&gt;
+&lt;td&gt;tt0323013&lt;/td&gt;
+&lt;td&gt;2004&lt;/td&gt;
+&lt;td&gt;Hindi&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;3389 rows × 9 columns&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="5.-Create-new-variable-whose-values-should-be-square-of-difference-between-imdbrating-and-imdbvotes."&gt;5. Create new variable whose values should be square of difference between imdbrating and imdbvotes.&lt;a class="anchor-link" href="#5.-Create-new-variable-whose-values-should-be-square-of-difference-between-imdbrating-and-imdbvotes."&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [12]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;#creating new column as &lt;/span&gt;
+&lt;span class="c1"&gt;#    imdb_new_var = square of difference between imdbrating and imdbvotes&lt;/span&gt;
+
+&lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'imdb_new_var'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'imdbRating'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;imdb&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'imdbVotes'&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
+&lt;span class="n"&gt;imdb&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+&lt;div class="output_area"&gt;
+&lt;div class="prompt output_prompt"&gt;Out[12]:&lt;/div&gt;
+&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
+&lt;div&gt;
+&lt;style&gt;
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+&lt;/style&gt;
+&lt;table border="1" class="dataframe"&gt;
+&lt;thead&gt;
+&lt;tr style="text-align: right;"&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Plot&lt;/th&gt;
+&lt;th&gt;Title&lt;/th&gt;
+&lt;th&gt;imdbVotes&lt;/th&gt;
+&lt;th&gt;Poster&lt;/th&gt;
+&lt;th&gt;imdbRating&lt;/th&gt;
+&lt;th&gt;Genre&lt;/th&gt;
+&lt;th&gt;imdbID&lt;/th&gt;
+&lt;th&gt;Year&lt;/th&gt;
+&lt;th&gt;Language&lt;/th&gt;
+&lt;th&gt;imdb_new_var&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;th&gt;0&lt;/th&gt;
+&lt;td&gt;A secret software created by the American gove...&lt;/td&gt;
+&lt;td&gt;Lethal Commission&lt;/td&gt;
+&lt;td&gt;1084.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BODUyNDI1...&lt;/td&gt;
+&lt;td&gt;6.4&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt2319919&lt;/td&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;1161221.76&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;1&lt;/th&gt;
+&lt;td&gt;In this action flick, JUDE ST. CLERE discovers...&lt;/td&gt;
+&lt;td&gt;The Lackey&lt;/td&gt;
+&lt;td&gt;2672.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMjAwODIx...&lt;/td&gt;
+&lt;td&gt;7.1&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt2197884&lt;/td&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7101692.01&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;2&lt;/th&gt;
+&lt;td&gt;Eddy (Jayaprakash Reddy) is a powerful mafia l...&lt;/td&gt;
+&lt;td&gt;Nijam&lt;/td&gt;
+&lt;td&gt;803.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;6.5&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt0368896&lt;/td&gt;
+&lt;td&gt;2003&lt;/td&gt;
+&lt;td&gt;Telugu&lt;/td&gt;
+&lt;td&gt;634412.25&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3&lt;/th&gt;
+&lt;td&gt;Co-Director Tom Logan discusses the making of ...&lt;/td&gt;
+&lt;td&gt;Feature Commentary with Director Tom Logan&lt;/td&gt;
+&lt;td&gt;1421.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTUzNDQ4...&lt;/td&gt;
+&lt;td&gt;6.8&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt3099258&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;1999961.64&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;4&lt;/th&gt;
+&lt;td&gt;In a nuclear plant disaster, five teenagers fi...&lt;/td&gt;
+&lt;td&gt;Lock Down&lt;/td&gt;
+&lt;td&gt;1887.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTgwMDg1...&lt;/td&gt;
+&lt;td&gt;5.4&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt2349962&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;3540418.56&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;5&lt;/th&gt;
+&lt;td&gt;When long time friend and informer, Louie D. G...&lt;/td&gt;
+&lt;td&gt;Bullitt and the Mystery of the Devils Root&lt;/td&gt;
+&lt;td&gt;1887.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BNzg2NzM5...&lt;/td&gt;
+&lt;td&gt;5.4&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt3020878&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;3540418.56&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;6&lt;/th&gt;
+&lt;td&gt;An astrophysicist professor - who firmly belie...&lt;/td&gt;
+&lt;td&gt;Dimension Folders&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTQ5NzA0...&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt2936218&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;7&lt;/th&gt;
+&lt;td&gt;A secret organization called "The Society" is ...&lt;/td&gt;
+&lt;td&gt;The Hunters Circle&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt2989060&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;8&lt;/th&gt;
+&lt;td&gt;An out of work good citizen and seasoned Karat...&lt;/td&gt;
+&lt;td&gt;Monrovia on Fire&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMjAxNjcz...&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt3745484&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;9&lt;/th&gt;
+&lt;td&gt;This is the Quantum Age. An age that now has f...&lt;/td&gt;
+&lt;td&gt;QUANTUM SHOCK the Movie&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt4089764&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;10&lt;/th&gt;
+&lt;td&gt;The Mad Monkey Crew 2 follows on from the even...&lt;/td&gt;
+&lt;td&gt;The Mad Monkey Crew 2&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt4320710&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;11&lt;/th&gt;
+&lt;td&gt;Tar and his Sons own a private island for thei...&lt;/td&gt;
+&lt;td&gt;2056 Escape from Zombie Island&lt;/td&gt;
+&lt;td&gt;2592.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;5.3&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt2545870&lt;/td&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;6691016.89&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;12&lt;/th&gt;
+&lt;td&gt;Steve and Virgil, a couple of straight shootin...&lt;/td&gt;
+&lt;td&gt;100 Miles from Hell&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTQ5Mjk4...&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt2955976&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;13&lt;/th&gt;
+&lt;td&gt;An outcast returns to his stomping grounds to ...&lt;/td&gt;
+&lt;td&gt;The Greed of Men&lt;/td&gt;
+&lt;td&gt;1559.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTgwNjM3...&lt;/td&gt;
+&lt;td&gt;6.3&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt2265591&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;2410877.29&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;14&lt;/th&gt;
+&lt;td&gt;The greatest thief in the world gives up his l...&lt;/td&gt;
+&lt;td&gt;Ghostman&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt3774658&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;15&lt;/th&gt;
+&lt;td&gt;An all-girl gang tangles with rival gangs and ...&lt;/td&gt;
+&lt;td&gt;Asphalt Angels&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt3149134&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;16&lt;/th&gt;
+&lt;td&gt;When a domestic terrorist group lead by Brian ...&lt;/td&gt;
+&lt;td&gt;Point of Deception&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt2022498&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;17&lt;/th&gt;
+&lt;td&gt;Arjun is a young man who will always defend hi...&lt;/td&gt;
+&lt;td&gt;Arjun&lt;/td&gt;
+&lt;td&gt;797.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;6.5&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt0907619&lt;/td&gt;
+&lt;td&gt;2004&lt;/td&gt;
+&lt;td&gt;Telugu&lt;/td&gt;
+&lt;td&gt;624890.25&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;18&lt;/th&gt;
+&lt;td&gt;A shadowy all-female crime organization - M.A....&lt;/td&gt;
+&lt;td&gt;MARRA&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTUwNjU4...&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt2318950&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;19&lt;/th&gt;
+&lt;td&gt;Eve's life is forever altered when her parents...&lt;/td&gt;
+&lt;td&gt;Prophecy of Eve&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMjM4MjAz...&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt3499966&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;20&lt;/th&gt;
+&lt;td&gt;One year after their father's death, two broth...&lt;/td&gt;
+&lt;td&gt;Cult of the Crystal Skull&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BNTEyNDg2...&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt3656294&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;21&lt;/th&gt;
+&lt;td&gt;Death Drive tells the story of a young man, wh...&lt;/td&gt;
+&lt;td&gt;Death Drive&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt4040672&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;22&lt;/th&gt;
+&lt;td&gt;Prohibition has been brought back into effect ...&lt;/td&gt;
+&lt;td&gt;80 Proof&lt;/td&gt;
+&lt;td&gt;2302.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMjA4MDA0...&lt;/td&gt;
+&lt;td&gt;5.6&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt2524400&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;5273452.96&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;23&lt;/th&gt;
+&lt;td&gt;A Modern day Nazi death squad embark on a cove...&lt;/td&gt;
+&lt;td&gt;Eagles Nest&lt;/td&gt;
+&lt;td&gt;2302.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;6.1&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt3961184&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;5271156.81&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;24&lt;/th&gt;
+&lt;td&gt;The Don of Dons is a forced love story with mu...&lt;/td&gt;
+&lt;td&gt;The Don of Dons&lt;/td&gt;
+&lt;td&gt;2592.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMjI0OTM4...&lt;/td&gt;
+&lt;td&gt;6.3&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt3151078&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;6685844.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;25&lt;/th&gt;
+&lt;td&gt;In the wake of a shocking civilian massacre in...&lt;/td&gt;
+&lt;td&gt;Turkey Shoot&lt;/td&gt;
+&lt;td&gt;1421.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTc0Nzgx...&lt;/td&gt;
+&lt;td&gt;5.0&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt3816614&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;2005056.00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;26&lt;/th&gt;
+&lt;td&gt;A gunfighter is taken prisoner by a female wil...&lt;/td&gt;
+&lt;td&gt;Six Gun Women&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt4020052&lt;/td&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;27&lt;/th&gt;
+&lt;td&gt;Sivaji is a young kid from Sri Lanka who's fam...&lt;/td&gt;
+&lt;td&gt;Chatrapathi&lt;/td&gt;
+&lt;td&gt;1179.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;7.6&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt0843328&lt;/td&gt;
+&lt;td&gt;2005&lt;/td&gt;
+&lt;td&gt;Telugu&lt;/td&gt;
+&lt;td&gt;1372177.96&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;28&lt;/th&gt;
+&lt;td&gt;Gem of the Rainforest is the story about the t...&lt;/td&gt;
+&lt;td&gt;Gem of the Rainforest&lt;/td&gt;
+&lt;td&gt;1887.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTAzNTA0...&lt;/td&gt;
+&lt;td&gt;5.8&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt2972032&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;3538913.44&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;29&lt;/th&gt;
+&lt;td&gt;Elizabeth Mann is a young aspiring publisher w...&lt;/td&gt;
+&lt;td&gt;The Search for Agent Z&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Action&lt;/td&gt;
+&lt;td&gt;tt2267664&lt;/td&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;...&lt;/th&gt;
+&lt;td&gt;...&lt;/td&gt;
+&lt;td&gt;...&lt;/td&gt;
+&lt;td&gt;...&lt;/td&gt;
+&lt;td&gt;...&lt;/td&gt;
+&lt;td&gt;...&lt;/td&gt;
+&lt;td&gt;...&lt;/td&gt;
+&lt;td&gt;...&lt;/td&gt;
+&lt;td&gt;...&lt;/td&gt;
+&lt;td&gt;...&lt;/td&gt;
+&lt;td&gt;...&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3359&lt;/th&gt;
+&lt;td&gt;A suburban cult is born... In a collage of new...&lt;/td&gt;
+&lt;td&gt;Embryonic&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt2149784&lt;/td&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3360&lt;/th&gt;
+&lt;td&gt;Renegades picks up immediately after Uprising ...&lt;/td&gt;
+&lt;td&gt;Chronicles of Humanity Regenades&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt4043138&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3361&lt;/th&gt;
+&lt;td&gt;Two outer-space aliens visit Earth with the in...&lt;/td&gt;
+&lt;td&gt;Deceit&lt;/td&gt;
+&lt;td&gt;2100.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BODEyNDE4...&lt;/td&gt;
+&lt;td&gt;6.3&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt0097176&lt;/td&gt;
+&lt;td&gt;1992&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;4383579.69&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3362&lt;/th&gt;
+&lt;td&gt;This sci-fi mockumentary follows the unusual e...&lt;/td&gt;
+&lt;td&gt;Hickory Never Bleeds&lt;/td&gt;
+&lt;td&gt;1467.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTY3NDA5...&lt;/td&gt;
+&lt;td&gt;5.9&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt2313778&lt;/td&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;2134813.21&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3363&lt;/th&gt;
+&lt;td&gt;Some time in the distant future, Earth's natur...&lt;/td&gt;
+&lt;td&gt;Era 7&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt2795556&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3364&lt;/th&gt;
+&lt;td&gt;The Krozley Team deals with past problems that...&lt;/td&gt;
+&lt;td&gt;Paranormal Chasers Ghostly Guest&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTY2MjIw...&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt4112398&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3365&lt;/th&gt;
+&lt;td&gt;An alien invasion comes to the Earth represent...&lt;/td&gt;
+&lt;td&gt;Lost in the Pinelands&lt;/td&gt;
+&lt;td&gt;1084.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BNDE1ODEz...&lt;/td&gt;
+&lt;td&gt;5.2&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt2207614&lt;/td&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;1163809.44&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3366&lt;/th&gt;
+&lt;td&gt;A young, confused Pauly, copes with stress as ...&lt;/td&gt;
+&lt;td&gt;Belgium Building&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt3994118&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3367&lt;/th&gt;
+&lt;td&gt;Two graduate students, Rose and Jacob, set out...&lt;/td&gt;
+&lt;td&gt;Pursuit the Movie&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt2255925&lt;/td&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3368&lt;/th&gt;
+&lt;td&gt;BOTANICA is a creepy futuristic black comedy t...&lt;/td&gt;
+&lt;td&gt;Botanica&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt3578376&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3369&lt;/th&gt;
+&lt;td&gt;A team of anonymous military and government se...&lt;/td&gt;
+&lt;td&gt;Project 12&lt;/td&gt;
+&lt;td&gt;2185.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMjEyNTEz...&lt;/td&gt;
+&lt;td&gt;6.1&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt1978514&lt;/td&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;4747605.21&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3370&lt;/th&gt;
+&lt;td&gt;Cybornetics propels you into a not so distant ...&lt;/td&gt;
+&lt;td&gt;Cybornetics Urban Cyborg&lt;/td&gt;
+&lt;td&gt;1252.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTkyNDIx...&lt;/td&gt;
+&lt;td&gt;5.3&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt3036250&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;1554260.89&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3371&lt;/th&gt;
+&lt;td&gt;"Mix" and his brother, a former "M.O.A. agent ...&lt;/td&gt;
+&lt;td&gt;In 24Hours&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt3552184&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3372&lt;/th&gt;
+&lt;td&gt;2035, United States of Europe. Some humans are...&lt;/td&gt;
+&lt;td&gt;Index Zero&lt;/td&gt;
+&lt;td&gt;1141.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BNzMyODYy...&lt;/td&gt;
+&lt;td&gt;5.8&lt;/td&gt;
+&lt;td&gt;Sci-Fi&lt;/td&gt;
+&lt;td&gt;tt3451968&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;1288679.04&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3373&lt;/th&gt;
+&lt;td&gt;After more than 100 years of ruthless competit...&lt;/td&gt;
+&lt;td&gt;DukeCarolina The Blue Blood Rivalry&lt;/td&gt;
+&lt;td&gt;2457.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMzQ3MTIw...&lt;/td&gt;
+&lt;td&gt;5.8&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt2780790&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;6008381.44&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3374&lt;/th&gt;
+&lt;td&gt;The Gold Rush Expedition Race is one of the fo...&lt;/td&gt;
+&lt;td&gt;2013 Gold Rush Expedition Race&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt4181324&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3375&lt;/th&gt;
+&lt;td&gt;From acclaimed directors Paul Diffley and Chri...&lt;/td&gt;
+&lt;td&gt;Wide Boyz&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt3121430&lt;/td&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3376&lt;/th&gt;
+&lt;td&gt;The best cricket players on the planet converg...&lt;/td&gt;
+&lt;td&gt;Indian Premier League&lt;/td&gt;
+&lt;td&gt;1027.0&lt;/td&gt;
+&lt;td&gt;http://i.media-imdb.com/images/SFa26455c07afc3...&lt;/td&gt;
+&lt;td&gt;8.5&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt2317751&lt;/td&gt;
+&lt;td&gt;2008&lt;/td&gt;
+&lt;td&gt;Hindi&lt;/td&gt;
+&lt;td&gt;1037342.25&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3377&lt;/th&gt;
+&lt;td&gt;The Nfinity Champions League is a group of 30 ...&lt;/td&gt;
+&lt;td&gt;Nfinity Champions League Cheerleading Event&lt;/td&gt;
+&lt;td&gt;1230.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTY5Nzg5...&lt;/td&gt;
+&lt;td&gt;5.1&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt3586164&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;1500380.01&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3378&lt;/th&gt;
+&lt;td&gt;"A City Divided" takes viewers through the gre...&lt;/td&gt;
+&lt;td&gt;A City Divided&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt3458290&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3379&lt;/th&gt;
+&lt;td&gt;The city of Detroit, Michigan has been known t...&lt;/td&gt;
+&lt;td&gt;Battles Bouts and Brawls The Story of Pro Wres...&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt3793322&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3380&lt;/th&gt;
+&lt;td&gt;Learn the secrets to catching trophy northern ...&lt;/td&gt;
+&lt;td&gt;Trophy Pike Tactics&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt3606510&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3381&lt;/th&gt;
+&lt;td&gt;Severe Racing is proud to present their 4th in...&lt;/td&gt;
+&lt;td&gt;Severe Offroad 4&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMjQxODc5...&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt4500344&lt;/td&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3382&lt;/th&gt;
+&lt;td&gt;Severe Racing Films offers up the best sequenc...&lt;/td&gt;
+&lt;td&gt;Best of Severe Offroad&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTUyNDUz...&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt4500728&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3383&lt;/th&gt;
+&lt;td&gt;Somewhere between fantasy and reality lies a p...&lt;/td&gt;
+&lt;td&gt;Live from the Moon&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTc3ODcx...&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt3420528&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3384&lt;/th&gt;
+&lt;td&gt;The Gold Rush Expedition Race is one of the fo...&lt;/td&gt;
+&lt;td&gt;2012 Gold Rush Expedition Race&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt4149040&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3385&lt;/th&gt;
+&lt;td&gt;17 Seconds' is a unique project that doesn't j...&lt;/td&gt;
+&lt;td&gt;17 Seconds&lt;/td&gt;
+&lt;td&gt;1421.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;5.2&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt3328724&lt;/td&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;2004489.64&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3386&lt;/th&gt;
+&lt;td&gt;Lone Star Holy War is a sports documentary hig...&lt;/td&gt;
+&lt;td&gt;Lone Star Holy War&lt;/td&gt;
+&lt;td&gt;2718.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8.7&lt;/td&gt;
+&lt;td&gt;Sport&lt;/td&gt;
+&lt;td&gt;tt4254746&lt;/td&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;English&lt;/td&gt;
+&lt;td&gt;7340306.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3387&lt;/th&gt;
+&lt;td&gt;Aks is the story of a hunter and his prey. A c...&lt;/td&gt;
+&lt;td&gt;Aks&lt;/td&gt;
+&lt;td&gt;1151.0&lt;/td&gt;
+&lt;td&gt;http://ia.media-imdb.com/images/M/MV5BMTUxOTg1...&lt;/td&gt;
+&lt;td&gt;5.9&lt;/td&gt;
+&lt;td&gt;Thriller, Mystery&lt;/td&gt;
+&lt;td&gt;tt0289845&lt;/td&gt;
+&lt;td&gt;2001&lt;/td&gt;
+&lt;td&gt;Hindi&lt;/td&gt;
+&lt;td&gt;1311254.01&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;3388&lt;/th&gt;
+&lt;td&gt;Karan is a lazy good-for-nothing who lives on ...&lt;/td&gt;
+&lt;td&gt;Lakshya&lt;/td&gt;
+&lt;td&gt;8556.0&lt;/td&gt;
+&lt;td&gt;http://i.media-imdb.com/images/SF1f0a42ee1aa08...&lt;/td&gt;
+&lt;td&gt;7.9&lt;/td&gt;
+&lt;td&gt;War, Drama, Romance&lt;/td&gt;
+&lt;td&gt;tt0323013&lt;/td&gt;
+&lt;td&gt;2004&lt;/td&gt;
+&lt;td&gt;Hindi&lt;/td&gt;
+&lt;td&gt;73070013.61&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;3389 rows × 10 columns&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = '//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: 'center'," +
+        "    displayIndent: '0em'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['$','$'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        " linebreaks: { automatic: true, width: '95% container' }, " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+        "    } " +
+        "}); ";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;
+</content><category term="python firsts"></category></entry></feed>
